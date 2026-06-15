@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#16a34a"/>
+    </linearGradient>
+  </defs>
+  <!-- Rounded square background -->
+  <rect width="64" height="64" rx="14" fill="url(#g)"/>
+  <!--
+    Unified TP monogram — ONE single outer path, ONE inner cutout.
+    
+    The T and P share a single vertical stem (x=23 to x=30).
+    - T crossbar extends left from x=14 to the P bowl top
+    - P bowl curves right from the stem
+    
+    Outer path (clockwise): traces full perimeter
+    Inner path (counter-clockwise): P counter/hole
+  -->
+  <path fill-rule="evenodd" fill="white" d="
+    M 14 15
+    L 41 15
+    C 46.5 15, 50 18.5, 50 24.5
+    C 50 30.5, 46.5 34, 41 34
+    L 30 34
+    L 30 49
+    L 23 49
+    L 23 21
+    L 14 21
+    Z
+    M 30 21
+    L 40 21
+    C 42.8 21, 44 22.5, 44 24.5
+    C 44 26.5, 42.8 28, 40 28
+    L 30 28
+    Z
+  "/>
+</svg>
